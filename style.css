@@ -1,0 +1,151 @@
+/* Reset de estilos básicos para consistência entre navegadores */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Estrutura do Cabeçalho Fixo no topo */
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eef2f5;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Área do Título / Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-badge {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* Menu de Navegação e Botões */
+.nav-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-icon {
+    font-size: 1.1rem;
+}
+
+/* --- Cores Temáticas dos Botões --- */
+
+/* Programação (Azul) */
+.btn-programacao {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+.btn-programacao:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Robótica (Vermelho/Laranja) */
+.btn-robotica {
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+.btn-robotica:hover {
+    background-color: #dc2626;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+}
+
+/* Física (Verde) */
+.btn-fisica {
+    background-color: #f0fdf4;
+    color: #16a34a;
+}
+.btn-fisica:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+}
+
+/* Área de conteúdo temporária (Apenas para testar o scroll) */
+.content-placeholder {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 80px 24px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+    color: #64748b;
+}
+
+/* Responsividade: Ajustes para telas de Celular */
+@media (max-width: 768px) {
+    .header-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .nav-menu {
+        display: block;
+    }
+    
+    .nav-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
